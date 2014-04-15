@@ -6,7 +6,12 @@ import org.eclipse.jetty.servlet.*;
 
 public class HelloWorld extends HttpServlet {
 
-    @Override
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -3043828122010838408L;
+
+	@Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         resp.getWriter().print("Albert's First App");
